@@ -1,6 +1,6 @@
 layers:
   QWERTY:
-  - ECS
+  - $$mdi:keyboard-esc$$
   - Q
   - W
   - E
