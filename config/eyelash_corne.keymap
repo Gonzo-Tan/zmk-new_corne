@@ -63,7 +63,7 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        number_layer {
+        number_symbol_layer {
             display-name = "NUM+SYB";
             bindings = <
 &trans  &kp N1  &kp N2  &kp N3  &kp N4     &kp N5                     &kp UP                &kp N6    &kp N7    &kp N8         &kp N9            &kp N0        &trans
@@ -87,7 +87,7 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        fn_layer {
+        fn_mouse_layer {
             display-name = "FN+MS";
             bindings = <
 &trans  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5                           &mmv MOVE_UP                     &kp F6  &kp F7     &kp F8     &kp F9     &kp F10  &kp DEL
@@ -102,17 +102,17 @@
         setting_layer {
             display-name = "SET";
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0   &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &kp F5                           &mmv MOVE_UP                     &kp F6  &kp F7     &kp F8     &kp F9     &kp F10  &kp DEL
-&bt BT_CLR_ALL &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI               &mmv MOVE_LEFT  &none           &mmv MOVE_RIGHT  &none   &mkp LCLK  &mkp MCLK   &sys_reset  &bootloader    &studio_unlock
-&rgb_ug RGB_BRD   &rgb_ug RGB_BRI    &none    &none   &none   &none   &none                    &mmv MOVE_DOWN                   &out OUT_USB  &out OUT_BLE   &none      &mkp MB5   &none    &none
-                          &trans  &trans  &trans                                                            &trans  &trans     &trans
+&bt BT_CLR       &bt BT_SEL 0     &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3     &kp F5                                    &mmv MOVE_UP                     &none         &none         &kp F8  &kp F9      &kp F10      &kp DEL
+&bt BT_CLR_ALL   &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI           &mmv MOVE_LEFT  &none           &mmv MOVE_RIGHT  &none         &none         &none   &sys_reset  &bootloader  &studio_unlock
+&rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &none           &none           &none            &none            &none                    &mmv MOVE_DOWN                   &out OUT_USB  &out OUT_BLE  &none   &mkp MB5    &none        &none
+                                                  &trans          &trans           &trans                                                                     &trans        &trans        &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
         };
 
         lower_layer {
-            display-name = "NUMBER";
+            display-name = "NUMBER2";
             bindings = <
 &trans  &kp N1           &kp N2          &kp N3        &kp N4        &kp N5                                         &mmv MOVE_UP                     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
 &trans  &bt BT_CLR_ALL   &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
@@ -124,7 +124,7 @@
         };
 
         raise_layer {
-            display-name = "SYMBOL";
+            display-name = "SYMBOL2";
             bindings = <
 &trans  &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT                            &mmv MOVE_UP                     &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
 &trans  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
@@ -136,7 +136,7 @@
         };
 
         layer_3 {
-            display-name = "Fn";
+            display-name = "Fn2";
             bindings = <
 &studio_unlock  &kp F1      &kp F2     &kp F3       &kp F4     &kp F5                                  &mmv MOVE_UP                     &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
 &trans          &trans      &mkp LCLK  &mkp MCLK    &mkp RCLK  &mkp MB4                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &bootloader  &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
