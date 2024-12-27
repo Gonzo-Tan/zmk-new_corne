@@ -101,9 +101,9 @@
 comb_layer {
             display-name = "R-CP2";
             bindings = <
-&trans  &none   &none   &none      &kp MINUS     &kp EQUAL                        &kp UP                &none   &none   &none   &none  &none  &none
+&trans   &kp GRAVE   &none   &none      &kp MINUS     &kp EQUAL                        &kp UP                &none   &none   &none   &none  &none  &none
 &trans  &none   &none  &kp LBKT      &kp RBKT      &kp BSLH           &kp LEFT  &kp ENTER  &kp RIGHT  &none   &none   &none   &none  &none  &none
-&trans &none   &none    &kp COMMA  &kp DOT  &kp FSLH  &none              &kp DOWN              &none   &none   &none   &none  &none  &none
+&trans     &kp COMMA  &kp DOT  &kp FSLH  &kp SEMI  &kp SQT &none              &kp DOWN              &none   &none   &none   &none  &none  &none
                       &trans     &trans   &trans                                             &trans  &trans  &trans
             >;
 
