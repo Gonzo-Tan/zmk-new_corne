@@ -28,7 +28,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
-  - '&td0'
+  - $$mdi:apple-keyboard-shift$$
   - Z
   - X
   - C
@@ -41,13 +41,13 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - NUM+SYB
-  - {t: '$$mdi:keyboard-space$$', h: SET}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:keyboard-space$$', h: FN+MS}
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
-  - {t: '$$mdi:keyboard-return$$', h: SET}
+  - {t: '$$mdi:keyboard-return$$', h: NUM+SYB}
   - FN+MS
-  - SET
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   NUM+SYB:
   - {t: '$$mdi:transfer$$', type: trans}
   - '1'
@@ -90,11 +90,11 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '-', s: _}
   - {t: '=', s: +}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   FN+MS:
@@ -127,7 +127,7 @@ layers:
   - HOME
   - END
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - LEFT WIN
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -140,11 +140,11 @@ layers:
   - '&mkp MB5'
   - PG UP
   - PG DN
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   SET:
   - $$mdi:bluetooth-off$$
@@ -189,12 +189,12 @@ layers:
   - '&mkp MB5'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   SYB2:
   - {t: '$$mdi:transfer$$', type: trans}
   - '!'
