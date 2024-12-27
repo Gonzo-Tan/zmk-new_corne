@@ -87,6 +87,19 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
+comb_layer {
+            display-name = "COMB";
+            bindings = <
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                     &kp UP                &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
+&trans  &kp N4        &kp N5        &kp N6        &none         &none                  &kp LEFT  &kp ENTER  &kp RIGHT  &kp GRAVE     &none         &none         &kp LBKT      &kp RBKT      &kp BSLH
+&trans  &kp N7        &kp N8        &kp N9        &kp N0        &none         &none              &kp DOWN              &none         &none         &none         &kp MINUS     &kp EQUAL     &trans
+                                    &trans        &trans        &trans                                                 &trans        &trans        &trans
+            >;
+
+            sensor-bindings = <&scroll_encoder>;
+        };
+
+
         setting_layer {
             display-name = "SET";
             bindings = <
