@@ -68,24 +68,14 @@
             bindings = <
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4     &kp NUMBER_5                     &kp UP                &kp NUMBER_6    &kp NUMBER_7    &kp NUMBER_8         &kp NUMBER_9            &kp NUMBER_0        &trans
 &trans  &kp N4  &kp N5  &kp N6   &none  &none            &kp LEFT  &kp ENTER  &kp RIGHT    &none &none           &none  &kp LBKT  &kp RBKT  &kp BSLH
-&trans  &kp N7  &kp N8  &kp N9  &kp N0     &none   &none              &kp DOWN              &kp GRAVE &none   &none  &kp EQUAL   &kp MINUS  &trans
+&trans  &kp N7  &kp N8  &kp N9  &kp N0     &none   &none              &kp DOWN              &kp GRAVE &none   &none  &kp MINUS &kp EQUAL     &trans
                         &trans  &trans     &trans                                           &trans    &trans    &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
         };
 
-        symbol_layer {
-            display-name = "SYB2";
-            bindings = <
-&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT                     &kp UP                &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&trans  &none     &none   &none     &none     &none               &kp LEFT  &kp ENTER  &kp RIGHT  &kp PLUS   &kp MINUS  &none      &none     &none     &none
-&trans  &none     &none   &none     &none     &none      &none              &kp DOWN              &kp EQUAL  &kp UNDER  &trans     &trans    &trans    &trans
-                          &trans    &trans    &trans                                              &trans     &trans     &trans
-            >;
-
-            sensor-bindings = <&scroll_encoder>;
-        };
+        
 
         fn_mouse_layer {
             display-name = "FN+MS";
@@ -106,6 +96,18 @@
 &bt BT_CLR_ALL   &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI           &mmv MOVE_LEFT  &none           &mmv MOVE_RIGHT  &none         &none         &none   &sys_reset  &bootloader  &studio_unlock
 &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &none           &none           &none            &none            &none                    &mmv MOVE_DOWN                   &out OUT_USB  &out OUT_BLE  &none   &mkp MB5    &none        &none
                                                   &trans          &trans           &trans                                                                     &trans        &trans        &trans
+            >;
+
+            sensor-bindings = <&scroll_encoder>;
+        };
+
+symbol_layer {
+            display-name = "SYB2";
+            bindings = <
+&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT                     &kp UP                &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
+&trans  &none     &none   &none     &none     &none               &kp LEFT  &kp ENTER  &kp RIGHT  &kp PLUS   &kp MINUS  &none      &none     &none     &none
+&trans  &none     &none   &none     &none     &none      &none              &kp DOWN              &kp EQUAL  &kp UNDER  &trans     &trans    &trans    &trans
+                          &trans    &trans    &trans                                              &trans     &trans     &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
