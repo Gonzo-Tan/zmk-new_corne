@@ -67,8 +67,8 @@
             display-name = "NUM+SYB";
             bindings = <
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                     &kp UP                &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
-&trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LBKT      &kp RBKT               &kp LEFT  &kp ENTER  &kp RIGHT  &kp GRAVE     &none         &none         &kp LBKT      &kp RBKT      &kp BSLH
-&trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp BSLH      &none              &kp DOWN              &none         &none         &none         &kp MINUS     &kp EQUAL     &trans
+&trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &none         &none                  &kp LEFT  &kp ENTER  &kp RIGHT  &kp GRAVE     &none         &none         &kp LBKT      &kp RBKT      &kp BSLH
+&trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &none         &none              &kp DOWN              &none         &none         &none         &kp MINUS     &kp EQUAL     &trans
                                     &trans        &trans        &trans                                                 &trans        &trans        &trans
             >;
 
@@ -87,24 +87,25 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        comb_layer {
+        right_cp1 {
             display-name = "R-CP";
             bindings = <
-&trans  &kp Y  &kp U  &kp I      &kp O    &kp P                        &kp UP                &none   &none   &none   &none  &none  &none
-&trans  &kp H  &kp J  &kp K      &kp L    &kp SEMI           &kp LEFT  &kp ENTER  &kp RIGHT  &none   &none   &none   &none  &none  &none
-&trans  &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &none              &kp DOWN              &none   &none   &none   &none  &none  &none
-                      &trans     &trans   &trans                                             &trans  &trans  &trans
+&trans  &kp Y  &kp U  &kp I   &kp O   &kp P                      &kp UP                &none   &none   &none   &none  &none  &none
+&trans  &kp H  &kp J  &kp K   &kp L   &none            &kp LEFT  &kp ENTER  &kp RIGHT  &none   &none   &none   &none  &none  &none
+&trans  &kp N  &kp M  &none   &none   &none   &none              &kp DOWN              &none   &none   &none   &none  &none  &none
+                      &trans  &trans  &trans                                           &trans  &trans  &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
         };
-comb_layer {
+
+        right_cp2 {
             display-name = "R-CP2";
             bindings = <
-&trans   &kp GRAVE   &none   &none      &kp MINUS     &kp EQUAL                        &kp UP                &none   &none   &none   &none  &none  &none
-&trans  &none   &none  &kp LBKT      &kp RBKT      &kp BSLH           &kp LEFT  &kp ENTER  &kp RIGHT  &none   &none   &none   &none  &none  &none
-&trans     &kp COMMA  &kp DOT  &kp FSLH  &kp SEMI  &kp SQT &none              &kp DOWN              &none   &none   &none   &none  &none  &none
-                      &trans     &trans   &trans                                             &trans  &trans  &trans
+&trans  &kp GRAVE  &none    &none     &kp MINUS  &kp EQUAL                     &kp UP                &none   &none   &none   &none  &none  &none
+&trans  &none      &none    &kp LBKT  &kp RBKT   &kp BSLH            &kp LEFT  &kp ENTER  &kp RIGHT  &none   &none   &none   &none  &none  &none
+&trans  &kp COMMA  &kp DOT  &kp FSLH  &kp SEMI   &kp SQT    &none              &kp DOWN              &none   &none   &none   &none  &none  &none
+                            &trans    &trans     &trans                                              &trans  &trans  &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
