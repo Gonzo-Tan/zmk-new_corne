@@ -87,18 +87,17 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-comb_layer {
+        comb_layer {
             display-name = "R-CP";
             bindings = <
-&trans  &kp Y        &kp U  &kp I      &kp O    &kp P                     &kp UP                &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
-&trans  &kp H        &kp J  &kp K      &kp L    &kp SEMI                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp GRAVE     &none         &none         &kp LBKT      &kp RBKT      &kp BSLH
-&trans  &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH         &none              &kp DOWN              &none         &none         &none         &kp MINUS     &kp EQUAL     &trans
-                                    &trans        &trans        &trans                                                 &trans        &trans        &trans
+&trans  &kp Y  &kp U  &kp I      &kp O    &kp P                        &kp UP                &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
+&trans  &kp H  &kp J  &kp K      &kp L    &kp SEMI           &kp LEFT  &kp ENTER  &kp RIGHT  &none         &none         &none         &kp LBKT      &kp RBKT      &kp BSLH
+&trans  &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &none              &kp DOWN              &none         &none         &none         &kp MINUS     &kp EQUAL     &trans
+                      &trans     &trans   &trans                                             &trans        &trans        &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
         };
-
 
         setting_layer {
             display-name = "SET";
