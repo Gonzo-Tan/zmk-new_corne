@@ -66,17 +66,17 @@ layers:
   - {t: '4', s: $}
   - {t: '5', s: '%'}
   - {t: '6', s: ^}
-  - {t: '`', s: '~'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-right-bold$$
+  - {t: '=', s: +}
+  - {t: '-', s: _}
+  - ':'
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
-  - '{'
-  - '}'
-  - ':'
-  - '"'
+  - {t: \, s: '|'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
@@ -90,7 +90,7 @@ layers:
   - <
   - '>'
   - '?'
-  - {t: '~', type: held}
+  - {t: '`', s: '~', type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
