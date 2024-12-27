@@ -98,6 +98,17 @@
 
             sensor-bindings = <&scroll_encoder>;
         };
+comb_layer {
+            display-name = "R-CP2";
+            bindings = <
+&trans  &none   &none   &none      &kp MINUS     &kp EQUAL                        &kp UP                &none   &none   &none   &none  &none  &none
+&trans  &none   &none   &none      &none &kp SQT           &kp LEFT  &kp ENTER  &kp RIGHT  &none   &none   &none   &none  &none  &none
+&trans &none   &none   &none      &kp DOT  &kp FSLH  &none              &kp DOWN              &none   &none   &none   &none  &none  &none
+                      &trans     &trans   &trans                                             &trans  &trans  &trans
+            >;
+
+            sensor-bindings = <&scroll_encoder>;
+        };
 
         setting_layer {
             display-name = "SET";
