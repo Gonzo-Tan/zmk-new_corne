@@ -81,7 +81,7 @@ layers:
   - '7'
   - '8'
   - '9'
-  - 'NUMBER '
+  - '0'
   - {t: \, s: '|'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:arrow-down-bold$$
