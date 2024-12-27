@@ -78,17 +78,17 @@
         fn_mouse_layer {
             display-name = "FN+MS";
             bindings = <
-&trans  &kp F1        &kp F2   &kp F3  &kp F4  &kp F5                           &mmv MOVE_UP                     &kp F6  &kp F7     &kp F8     &kp F9     &kp F10    &kp DEL
-&trans  &kp F6  &kp F7     &kp F8     &kp F9     &kp F10          &mmv MOVE_LEFT  &none           &mmv MOVE_RIGHT  &none   &mkp LCLK  &mkp MCLK  &mkp RCLK  &kp HOME   &kp END
-&trans  &kp F11       &kp F12    &none   &kp LEFT_WIN   &none                    &mmv MOVE_DOWN                   &none   &mkp MB4   &none      &mkp MB5   &kp PG_UP  &kp PG_DN
-                               &trans  &trans  &trans                                                            &trans  &trans     &trans
+&trans  &kp F1   &kp F2   &kp F3  &kp F4        &kp F5                                     &mmv MOVE_UP                   &kp F6    &kp F7     &kp F8     &kp F9     &kp F10    &kp DEL
+&trans  &kp F6   &kp F7   &kp F8  &kp F9        &kp F10                    &mmv MOVE_LEFT  &none         &mmv MOVE_RIGHT  &none     &mkp LCLK  &mkp MCLK  &mkp RCLK  &kp HOME   &kp END
+&trans  &kp F11  &kp F12  &none   &kp LEFT_WIN  &none    &mmv MOVE_DOWN                    &none                          &mkp MB4  &none      &mkp MB5   &kp PG_UP  &kp PG_DN  &trans
+                          &trans  &trans        &trans                                                                    &trans    &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
         };
 
         right_cp1 {
-            display-name = "R-CP";
+            display-name = "R-WD";
             bindings = <
 &trans  &kp Y  &kp U  &kp I   &kp O   &kp P                      &kp UP                &none   &none   &none   &none  &none  &none
 &trans  &kp H  &kp J  &kp K   &kp L   &none            &kp LEFT  &kp ENTER  &kp RIGHT  &none   &none   &none   &none  &none  &none
@@ -100,7 +100,7 @@
         };
 
         right_cp2 {
-            display-name = "R-CP2";
+            display-name = "R-SYB";
             bindings = <
 &trans  &kp GRAVE  &none    &none     &kp MINUS  &kp EQUAL                     &kp UP                &none   &none   &none   &none  &none  &none
 &trans  &none      &none    &kp LBKT  &kp RBKT   &kp BSLH            &kp LEFT  &kp ENTER  &kp RIGHT  &none   &none   &none   &none  &none  &none
