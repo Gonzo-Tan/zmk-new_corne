@@ -137,7 +137,7 @@
         macors_layers {
             display-name = "MACROS";
             bindings = <
-&pswd  &none  &none  &none  &none  &none                  &none            &none     &none      &none     &none  &none  &none
+&none  &none  &none  &none  &none  &none                  &none            &none     &none      &none     &none  &none  &none
 &none  &none  &none  &none  &none  &none           &none  &none  &none     &none      &none      &none     &none  &none  &none
 &none  &none  &none  &none  &none  &none  &none           &none            &none      &none      &none     &none  &none  &none
                      &none  &none  &none                                   &none      &none      &none
