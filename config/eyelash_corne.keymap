@@ -52,6 +52,33 @@
             bindings = <&kp LALT>, <&kp ENTER>;
         };
     };
+    macros {
+        zed_em_kay: zed_em_kay {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp Z &kp M &kp K>,
+                <&macro_release>,
+                <&kp LSHFT>;
+        };
+
+        pswd: pswd {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp T>,
+                <&macro_press>,
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp G &kp Z &kp KP_N1 &kp KP_N1 &kp AT_SIGN &kp C &kp C &kp DOT &kp C &kp O &kp M>,
+        };
+    };
 
     rgb_encoder: rgb_encoder {
         compatible = "zmk,behavior-sensor-rotate";
