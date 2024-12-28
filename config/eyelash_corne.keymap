@@ -30,6 +30,27 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
+
+        td1: esc_r1_r2 {
+            compatible = "zmk,behavior-tap-dance";
+            display-name = "LESC/TO3/TO4";
+            #binding-cells = <0>;
+            bindings = <&kp ESC>, <&to 3>, <&to 4>;
+        };
+
+        td2: esc_to0 {
+            compatible = "zmk,behavior-tap-dance";
+            display-name = "LESC/TO0";
+            #binding-cells = <0>;
+            bindings = <&kp ESC>, <&to 0>, <&to 0>;
+        };
+
+        td3: alt_enter {
+            compatible = "zmk,behavior-tap-dance";
+            display-name = "LALT/ENTER";
+            #binding-cells = <0>;
+            bindings = <&kp LALT>, <&kp ENTER>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
