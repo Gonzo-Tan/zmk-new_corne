@@ -81,7 +81,7 @@
 
     keymap {
         compatible = "zmk,keymap";
-        default_layer1 {
+        default_layer {
             display-name = "QWERTY";
             bindings = <
 &td1            &kp Q  &kp W  &kp E        &kp R     &kp T                         &kp UP                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
@@ -92,15 +92,15 @@
 
             sensor-bindings = <&scroll_encoder>;
         };
-        default_layer {
-            display-name = "QWERTY";
+        number_symbol_layer {
+            display-name = "NUM+SYB";
             bindings = <
-&kp TAB    &kp Q  &kp W      &kp E     &kp R  &kp T                              &kp UP                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&td0       &kp A  &kp S      &kp D     &kp F  &kp G                    &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LCTRL  &kp Z  &kp X      &kp C     &kp V  &kp B       &kp SPACE              &kp DOWN              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                             &kp LGUI  &mo 1  &lt 3 SPACE                                              &lt 3 ENTER  &mo 2  &kp RALT
+&td2            &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                     &kp UP                &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
+&kp TAB         &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0           &kp LEFT  &kp ENTER  &kp RIGHT  &kp GRAVE     &none         &none         &kp LBKT      &kp RBKT      &kp BSLH
+&kp LEFT_SHIFT  &none         &none         &none         &none         &kp BSPC      &to 0              &kp DOWN              &none         &none         &none         &kp MINUS     &kp EQUAL     &trans
+                                            &trans        &kp LALT      &kp LCTRL                                              &trans        &trans        &trans
             >;
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&scroll_encoder>;
         };
 
         lower_layer {
