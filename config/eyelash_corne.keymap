@@ -67,6 +67,28 @@
 
         tap-ms = <30>;
     };
+    macros {
+        zed_em_kay: zed_em_kay {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHFT>
+                , <&macro_tap &kp Z &kp M &kp K>
+                , <&macro_release &kp LSHFT>
+                ;
+        };
+
+        pswd: pswd {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHFT>
+                , <&macro_tap &kp T>
+                ,  <&macro_press &kp LSHFT>
+                 , <&macro_tap &kp G &kp Z &kp KP_N1 &kp KP_N1  &kp AT_SIGN &kp C &kp C &kp DOT &kp C &kp O &kp M>
+                ;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -126,6 +148,17 @@
 &kp TAB  &kp COMMA  &kp DOT   &kp LBKT  &kp RBKT   &kp BSLH            &kp LEFT  &kp ENTER  &kp RIGHT  &none   &none   &none   &none  &none  &none
 &kp LEFT_SHIFT  &none      &kp FSLH  &kp SEMI  &kp SQT    &kp BSPC   &to 0              &kp DOWN              &none   &none   &none   &none  &none  &none
                              &trans    &kp LALT  &kp LCTRL                                              &trans  &trans  &trans
+            >;
+
+            sensor-bindings = <&scroll_encoder>;
+        };
+        right_cp2 {
+            display-name = "MACROS";
+            bindings = <
+<&pswd>    &none   &none   &none   &none  &none  &none                     &kp UP                &none   &none   &none   &none  &none  &none
+&none   &none   &none   &none  &none  &none   &none            &kp LEFT  &kp ENTER  &kp RIGHT  &none   &none   &none   &none  &none  &none
+&none   &none   &none   &none  &none  &none    &none   &to 0              &kp DOWN              &none   &none   &none   &none  &none  &none
+                             &none &none &none                                            &trans  &trans  &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
