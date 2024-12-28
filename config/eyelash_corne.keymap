@@ -102,6 +102,16 @@
             >;
             sensor-bindings = <&scroll_encoder>;
         };
+        fn_mouse_layer {
+            display-name = "FN+MS";
+            bindings = <
+&td2            &kp F1   &kp F2   &kp F3  &kp F4        &kp F5                              &mmv MOVE_UP                     &kp F6  &kp F7     &kp F8     &kp F9     &kp F10    &kp DEL
+&kp TAB         &kp F6   &kp F7   &kp F8  &kp F9        &kp F10             &mmv MOVE_LEFT  &none           &mmv MOVE_RIGHT  &none   &mkp LCLK  &mkp MCLK  &mkp RCLK  &kp HOME   &kp END
+&kp LEFT_SHIFT  &kp F11  &kp F12  &none   &kp LEFT_WIN  &kp BSPC   &to 0                    &mmv MOVE_DOWN                   &none   &mkp MB4   &none      &mkp MB5   &kp PG_UP  &kp PG_DN
+                                  &trans  &kp LALT      &kp LCTRL                                                            &trans  &trans     &trans
+            >;
+            sensor-bindings = <&scroll_encoder>;
+        };
 
         lower_layer {
             display-name = "NUMBER";
