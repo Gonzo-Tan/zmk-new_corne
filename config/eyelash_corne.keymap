@@ -35,9 +35,15 @@
 
          td1: td1 {
             compatible = "zmk,behavior-tap-dance";
-            display-name = "LALT/L3/L4";
+            display-name = "LALT/TO3/TO4";
             #binding-cells = <0>;
-            bindings = <&kp LALT>, <&to 3>, <&to 4>;
+            bindings = <&kp ESC>, <&to 3>, <&to 4>;
+        };
+        td2: td2 {
+            compatible = "zmk,behavior-tap-dance";
+            display-name = "LESC/TO0";
+            #binding-cells = <0>;
+            bindings = <&kp ESC>, <&to 0>, <&to 0>;
         };
     };
 
