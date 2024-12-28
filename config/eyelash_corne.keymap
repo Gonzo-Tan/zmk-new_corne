@@ -33,12 +33,13 @@
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
 
-         td1: td1 {
+        td1: td1 {
             compatible = "zmk,behavior-tap-dance";
             display-name = "LALT/TO3/TO4";
             #binding-cells = <0>;
             bindings = <&kp ESC>, <&to 3>, <&to 4>;
         };
+
         td2: td2 {
             compatible = "zmk,behavior-tap-dance";
             display-name = "LESC/TO0";
@@ -67,7 +68,7 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp ESC         &kp Q  &kp W  &kp E        &kp R     &kp T                         &kp UP                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
+&td1            &kp Q  &kp W  &kp E        &kp R     &kp T                         &kp UP                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
 &kp TAB         &kp A  &kp S  &kp D        &kp F     &kp G               &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LEFT_SHIFT  &kp Z  &kp X  &kp C        &kp V     &kp B      &none              &kp DOWN              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &none
                               &lt 2 SPACE  &kp LALT  &kp LCTRL                                           &lt 1 ENTER  &mo 2  &none
@@ -79,7 +80,7 @@
         number_symbol_layer {
             display-name = "NUM+SYB";
             bindings = <
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                     &kp UP                &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
+&td2    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                     &kp UP                &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
 &trans  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0           &kp LEFT  &kp ENTER  &kp RIGHT  &kp GRAVE     &none         &none         &kp LBKT      &kp RBKT      &kp BSLH
 &trans  &none         &none         &none         &none         &kp BSPC      &to 0              &kp DOWN              &none         &none         &none         &kp MINUS     &kp EQUAL     &trans
                                     &trans        &trans        &trans                                                 &trans        &trans        &trans
@@ -91,7 +92,7 @@
         fn_mouse_layer {
             display-name = "FN+MS";
             bindings = <
-&trans  &kp F1   &kp F2   &kp F3  &kp F4        &kp F5                             &mmv MOVE_UP                     &kp F6  &kp F7     &kp F8     &kp F9     &kp F10    &kp DEL
+&td2    &kp F1   &kp F2   &kp F3  &kp F4        &kp F5                             &mmv MOVE_UP                     &kp F6  &kp F7     &kp F8     &kp F9     &kp F10    &kp DEL
 &trans  &kp F6   &kp F7   &kp F8  &kp F9        &kp F10            &mmv MOVE_LEFT  &none           &mmv MOVE_RIGHT  &none   &mkp LCLK  &mkp MCLK  &mkp RCLK  &kp HOME   &kp END
 &trans  &kp F11  &kp F12  &none   &kp LEFT_WIN  &kp BSPC  &to 0                    &mmv MOVE_DOWN                   &none   &mkp MB4   &none      &mkp MB5   &kp PG_UP  &kp PG_DN
                           &trans  &trans        &trans                                                              &trans  &trans     &trans
@@ -103,7 +104,7 @@
         right_cp1 {
             display-name = "R-WD";
             bindings = <
-&trans  &kp Y  &kp U  &kp I   &kp O   &kp P                        &kp UP                &none   &none   &none   &none  &none  &none
+&td2    &kp Y  &kp U  &kp I   &kp O   &kp P                        &kp UP                &none   &none   &none   &none  &none  &none
 &trans  &kp H  &kp J  &kp K   &kp L   &none              &kp LEFT  &kp ENTER  &kp RIGHT  &none   &none   &none   &none  &none  &none
 &trans  &kp N  &kp M  &none   &none   &kp BSPC  &to 0              &kp DOWN              &none   &none   &none   &none  &none  &none
                       &trans  &trans  &trans                                             &trans  &trans  &trans
@@ -115,7 +116,7 @@
         right_cp2 {
             display-name = "R-SYB";
             bindings = <
-&trans  &kp GRAVE  &none     &none     &kp MINUS  &kp EQUAL                     &kp UP                &none   &none   &none   &none  &none  &none
+&td2    &kp GRAVE  &none     &none     &kp MINUS  &kp EQUAL                     &kp UP                &none   &none   &none   &none  &none  &none
 &trans  &kp COMMA  &kp DOT   &kp LBKT  &kp RBKT   &kp BSLH            &kp LEFT  &kp ENTER  &kp RIGHT  &none   &none   &none   &none  &none  &none
 &trans  &none      &kp FSLH  &kp SEMI  &kp SQT    &kp BSPC   &to 0              &kp DOWN              &none   &none   &none   &none  &none  &none
                              &trans    &trans     &trans                                              &trans  &trans  &trans
@@ -127,9 +128,9 @@
         setting_layer {
             display-name = "SET";
             bindings = <
-&bt BT_CLR       &bt BT_SEL 0     &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3     &kp F5                                    &mmv MOVE_UP                     &none         &none         &kp F8  &kp F9      &kp F10      &kp DEL
+&td2             &bt BT_SEL 0     &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3     &kp F5                                    &mmv MOVE_UP                     &none         &none         &kp F8  &kp F9      &kp F10      &kp DEL
 &bt BT_CLR_ALL   &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI           &mmv MOVE_LEFT  &none           &mmv MOVE_RIGHT  &none         &none         &none   &sys_reset  &bootloader  &studio_unlock
-&rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &none           &none           &none            &none            &to 0                    &mmv MOVE_DOWN                   &out OUT_USB  &out OUT_BLE  &none   &mkp MB5    &none        &none
+&rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &bt BT_CLR      &none           &none            &none            &to 0                    &mmv MOVE_DOWN                   &out OUT_USB  &out OUT_BLE  &none   &mkp MB5    &none        &none
                                                   &trans          &trans           &trans                                                                     &trans        &trans        &trans
             >;
 
