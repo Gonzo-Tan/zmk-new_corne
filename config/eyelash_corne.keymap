@@ -32,6 +32,13 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
+
+         td1: td1 {
+            compatible = "zmk,behavior-tap-dance";
+            display-name = "LALT/L3/L4";
+            #binding-cells = <0>;
+            bindings = <&kp LALT>, <&to 3>, <&to 4>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
