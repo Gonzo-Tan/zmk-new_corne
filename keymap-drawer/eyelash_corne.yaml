@@ -1,6 +1,6 @@
 layers:
   QWERTY:
-  - $$mdi:keyboard-esc$$
+  - '&td1'
   - Q
   - W
   - E
@@ -49,7 +49,7 @@ layers:
   - FN+MS
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   NUM+SYB:
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&td2'
   - '1'
   - '2'
   - '3'
@@ -98,7 +98,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   FN+MS:
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&td2'
   - F1
   - F2
   - F3
@@ -147,7 +147,7 @@ layers:
   - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   R-WD:
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&td2'
   - Y
   - U
   - I
@@ -196,7 +196,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   R-SYB:
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&td2'
   - {t: '`', s: '~'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -245,7 +245,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   SET:
-  - $$mdi:bluetooth-off$$
+  - '&td2'
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
@@ -275,7 +275,7 @@ layers:
   - '&studio_unlock'
   - RGB BRD
   - RGB BRI
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:bluetooth-off$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
